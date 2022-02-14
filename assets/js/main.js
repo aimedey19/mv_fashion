@@ -243,37 +243,43 @@
 	  10.2 Product Slider Slick ---------------
 	  -----------------------------------------*/
 	function product_slider(){
-	 $('.productSlider').slick({
-		dots: false,
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		arrows: true,
-		responsive: [
-		{
-		  breakpoint: 1024,
-		  settings: {
-			slidesToShow: 3,
-			slidesToScroll: 1
-		  }
-		},
-		{
-		  breakpoint: 600,
-		  settings: {
-			slidesToShow: 2,
-			slidesToScroll: 1
-		  }
-		},
-		{
-		  breakpoint: 480,
-		  settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1
-		  }
-		}
-		]
 	
-	  });
+	 $('.productSlider').each(function(key, item){
+
+		console.log(item)
+
+		$(item).slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: true,
+			responsive: [
+			{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+			},
+			{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+			},
+			{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+			}
+			]
+		
+		});
+	 })
 	}
 	product_slider();
 
