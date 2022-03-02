@@ -1,0 +1,50 @@
+{% extends 'store/base.html' %}
+{% load static
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<style>
+    .alert li {
+        color: red;
+    }
+</style>
+    <div id="page-content">
+    	<!--Page Title-->
+    	<div class="page section-header text-center">
+			<div class="page-title">
+        		<div class="wrapper"><h1 class="page-width">Connexion</h1></div>
+      		</div>
+		</div>
+        <!--End Page Title-->
+        
+        <div class="container">
+        	<div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
+                	<div class="mb-4">
+                       <form method="post" accept-charset="UTF-8" >
+                           {% csrf_token %}
+                          <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    {{ form|crispy }}
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="submit" class="btn mb-3" value="Connexion">
+                                <p class="mb-4">
+									<a href="#" id="RecoverPassword">Mot de passe oublié?</a> &nbsp; | &nbsp;
+								    <a href="{% url 'users:register' %}" id="customer_register_link">Créer un compte</a>
+                                </p>
+                            </div>
+                         </div>
+                     </form>
+                    </div>
+               	</div>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}
