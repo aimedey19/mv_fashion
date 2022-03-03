@@ -1,4 +1,0 @@
-Pillow
-Django==4.0.2
-django-phonenumber-field[phonenumbers]
-django-crispy-forms
