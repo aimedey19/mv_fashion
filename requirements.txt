@@ -4,3 +4,4 @@ django-phonenumber-field[phonenumbers]
 django-crispy-forms
 django-browser-reload
 gunicorn
+whitenoise
