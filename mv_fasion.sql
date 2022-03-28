@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: auth_group; Type: TABLE; Schema: public; Owner: postgres
+-- Name: auth_group; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.auth_group (
@@ -30,10 +30,8 @@ CREATE TABLE public.auth_group (
 );
 
 
-ALTER TABLE public.auth_group OWNER TO postgres;
-
 --
--- Name: auth_group_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: auth_group_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.auth_group_id_seq
@@ -45,17 +43,15 @@ CREATE SEQUENCE public.auth_group_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_group_id_seq OWNER TO postgres;
-
 --
--- Name: auth_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: auth_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.auth_group_id_seq OWNED BY public.auth_group.id;
 
 
 --
--- Name: auth_group_permissions; Type: TABLE; Schema: public; Owner: postgres
+-- Name: auth_group_permissions; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.auth_group_permissions (
@@ -65,10 +61,8 @@ CREATE TABLE public.auth_group_permissions (
 );
 
 
-ALTER TABLE public.auth_group_permissions OWNER TO postgres;
-
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.auth_group_permissions_id_seq
@@ -79,17 +73,15 @@ CREATE SEQUENCE public.auth_group_permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_group_permissions_id_seq OWNER TO postgres;
-
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.auth_group_permissions_id_seq OWNED BY public.auth_group_permissions.id;
 
 
 --
--- Name: auth_permission; Type: TABLE; Schema: public; Owner: postgres
+-- Name: auth_permission; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.auth_permission (
@@ -100,10 +92,8 @@ CREATE TABLE public.auth_permission (
 );
 
 
-ALTER TABLE public.auth_permission OWNER TO postgres;
-
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: auth_permission_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.auth_permission_id_seq
@@ -115,17 +105,15 @@ CREATE SEQUENCE public.auth_permission_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_permission_id_seq OWNER TO postgres;
-
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: auth_permission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.auth_permission_id_seq OWNED BY public.auth_permission.id;
 
 
 --
--- Name: django_admin_log; Type: TABLE; Schema: public; Owner: postgres
+-- Name: django_admin_log; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.django_admin_log (
@@ -141,10 +129,8 @@ CREATE TABLE public.django_admin_log (
 );
 
 
-ALTER TABLE public.django_admin_log OWNER TO postgres;
-
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: django_admin_log_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.django_admin_log_id_seq
@@ -156,17 +142,15 @@ CREATE SEQUENCE public.django_admin_log_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_admin_log_id_seq OWNER TO postgres;
-
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: django_admin_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.django_admin_log_id_seq OWNED BY public.django_admin_log.id;
 
 
 --
--- Name: django_content_type; Type: TABLE; Schema: public; Owner: postgres
+-- Name: django_content_type; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.django_content_type (
@@ -176,10 +160,8 @@ CREATE TABLE public.django_content_type (
 );
 
 
-ALTER TABLE public.django_content_type OWNER TO postgres;
-
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: django_content_type_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.django_content_type_id_seq
@@ -191,17 +173,15 @@ CREATE SEQUENCE public.django_content_type_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_content_type_id_seq OWNER TO postgres;
-
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: django_content_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.django_content_type_id_seq OWNED BY public.django_content_type.id;
 
 
 --
--- Name: django_migrations; Type: TABLE; Schema: public; Owner: postgres
+-- Name: django_migrations; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.django_migrations (
@@ -212,10 +192,8 @@ CREATE TABLE public.django_migrations (
 );
 
 
-ALTER TABLE public.django_migrations OWNER TO postgres;
-
 --
--- Name: django_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: django_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.django_migrations_id_seq
@@ -226,17 +204,15 @@ CREATE SEQUENCE public.django_migrations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_migrations_id_seq OWNER TO postgres;
-
 --
--- Name: django_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: django_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.django_migrations_id_seq OWNED BY public.django_migrations.id;
 
 
 --
--- Name: django_session; Type: TABLE; Schema: public; Owner: postgres
+-- Name: django_session; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.django_session (
@@ -246,10 +222,8 @@ CREATE TABLE public.django_session (
 );
 
 
-ALTER TABLE public.django_session OWNER TO postgres;
-
 --
--- Name: store_collection; Type: TABLE; Schema: public; Owner: postgres
+-- Name: store_collection; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.store_collection (
@@ -259,10 +233,8 @@ CREATE TABLE public.store_collection (
 );
 
 
-ALTER TABLE public.store_collection OWNER TO postgres;
-
 --
--- Name: store_collection_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: store_collection_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.store_collection_id_seq
@@ -273,17 +245,15 @@ CREATE SEQUENCE public.store_collection_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.store_collection_id_seq OWNER TO postgres;
-
 --
--- Name: store_collection_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: store_collection_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.store_collection_id_seq OWNED BY public.store_collection.id;
 
 
 --
--- Name: store_product; Type: TABLE; Schema: public; Owner: postgres
+-- Name: store_product; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.store_product (
@@ -299,10 +269,8 @@ CREATE TABLE public.store_product (
 );
 
 
-ALTER TABLE public.store_product OWNER TO postgres;
-
 --
--- Name: store_product_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: store_product_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.store_product_id_seq
@@ -313,17 +281,15 @@ CREATE SEQUENCE public.store_product_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.store_product_id_seq OWNER TO postgres;
-
 --
--- Name: store_product_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: store_product_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.store_product_id_seq OWNED BY public.store_product.id;
 
 
 --
--- Name: store_productimage; Type: TABLE; Schema: public; Owner: postgres
+-- Name: store_productimage; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.store_productimage (
@@ -333,10 +299,8 @@ CREATE TABLE public.store_productimage (
 );
 
 
-ALTER TABLE public.store_productimage OWNER TO postgres;
-
 --
--- Name: store_productimage_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: store_productimage_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.store_productimage_id_seq
@@ -347,17 +311,15 @@ CREATE SEQUENCE public.store_productimage_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.store_productimage_id_seq OWNER TO postgres;
-
 --
--- Name: store_productimage_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: store_productimage_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.store_productimage_id_seq OWNED BY public.store_productimage.id;
 
 
 --
--- Name: store_variant; Type: TABLE; Schema: public; Owner: postgres
+-- Name: store_variant; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.store_variant (
@@ -368,10 +330,8 @@ CREATE TABLE public.store_variant (
 );
 
 
-ALTER TABLE public.store_variant OWNER TO postgres;
-
 --
--- Name: store_variant_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: store_variant_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.store_variant_id_seq
@@ -382,17 +342,15 @@ CREATE SEQUENCE public.store_variant_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.store_variant_id_seq OWNER TO postgres;
-
 --
--- Name: store_variant_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: store_variant_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.store_variant_id_seq OWNED BY public.store_variant.id;
 
 
 --
--- Name: users_user; Type: TABLE; Schema: public; Owner: postgres
+-- Name: users_user; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.users_user (
@@ -410,10 +368,8 @@ CREATE TABLE public.users_user (
 );
 
 
-ALTER TABLE public.users_user OWNER TO postgres;
-
 --
--- Name: users_user_groups; Type: TABLE; Schema: public; Owner: postgres
+-- Name: users_user_groups; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.users_user_groups (
@@ -423,10 +379,8 @@ CREATE TABLE public.users_user_groups (
 );
 
 
-ALTER TABLE public.users_user_groups OWNER TO postgres;
-
 --
--- Name: users_user_groups_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: users_user_groups_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.users_user_groups_id_seq
@@ -437,17 +391,15 @@ CREATE SEQUENCE public.users_user_groups_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_user_groups_id_seq OWNER TO postgres;
-
 --
--- Name: users_user_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: users_user_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.users_user_groups_id_seq OWNED BY public.users_user_groups.id;
 
 
 --
--- Name: users_user_user_permissions; Type: TABLE; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.users_user_user_permissions (
@@ -457,10 +409,8 @@ CREATE TABLE public.users_user_user_permissions (
 );
 
 
-ALTER TABLE public.users_user_user_permissions OWNER TO postgres;
-
 --
--- Name: users_user_user_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.users_user_user_permissions_id_seq
@@ -471,101 +421,99 @@ CREATE SEQUENCE public.users_user_user_permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_user_user_permissions_id_seq OWNER TO postgres;
-
 --
--- Name: users_user_user_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.users_user_user_permissions_id_seq OWNED BY public.users_user_user_permissions.id;
 
 
 --
--- Name: auth_group id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: auth_group id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group ALTER COLUMN id SET DEFAULT nextval('public.auth_group_id_seq'::regclass);
 
 
 --
--- Name: auth_group_permissions id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: auth_group_permissions id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group_permissions ALTER COLUMN id SET DEFAULT nextval('public.auth_group_permissions_id_seq'::regclass);
 
 
 --
--- Name: auth_permission id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: auth_permission id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_permission ALTER COLUMN id SET DEFAULT nextval('public.auth_permission_id_seq'::regclass);
 
 
 --
--- Name: django_admin_log id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: django_admin_log id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_admin_log ALTER COLUMN id SET DEFAULT nextval('public.django_admin_log_id_seq'::regclass);
 
 
 --
--- Name: django_content_type id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: django_content_type id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_content_type ALTER COLUMN id SET DEFAULT nextval('public.django_content_type_id_seq'::regclass);
 
 
 --
--- Name: django_migrations id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: django_migrations id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_migrations ALTER COLUMN id SET DEFAULT nextval('public.django_migrations_id_seq'::regclass);
 
 
 --
--- Name: store_collection id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: store_collection id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_collection ALTER COLUMN id SET DEFAULT nextval('public.store_collection_id_seq'::regclass);
 
 
 --
--- Name: store_product id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: store_product id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_product ALTER COLUMN id SET DEFAULT nextval('public.store_product_id_seq'::regclass);
 
 
 --
--- Name: store_productimage id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: store_productimage id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_productimage ALTER COLUMN id SET DEFAULT nextval('public.store_productimage_id_seq'::regclass);
 
 
 --
--- Name: store_variant id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: store_variant id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_variant ALTER COLUMN id SET DEFAULT nextval('public.store_variant_id_seq'::regclass);
 
 
 --
--- Name: users_user_groups id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: users_user_groups id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_groups ALTER COLUMN id SET DEFAULT nextval('public.users_user_groups_id_seq'::regclass);
 
 
 --
--- Name: users_user_user_permissions id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_user_permissions ALTER COLUMN id SET DEFAULT nextval('public.users_user_user_permissions_id_seq'::regclass);
 
 
 --
--- Data for Name: auth_group; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: auth_group; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.auth_group (id, name) FROM stdin;
@@ -573,7 +521,7 @@ COPY public.auth_group (id, name) FROM stdin;
 
 
 --
--- Data for Name: auth_group_permissions; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: auth_group_permissions; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.auth_group_permissions (id, group_id, permission_id) FROM stdin;
@@ -581,7 +529,7 @@ COPY public.auth_group_permissions (id, group_id, permission_id) FROM stdin;
 
 
 --
--- Data for Name: auth_permission; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: auth_permission; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
@@ -629,7 +577,7 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 
 
 --
--- Data for Name: django_admin_log; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: django_admin_log; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.django_admin_log (id, action_time, object_id, object_repr, action_flag, change_message, content_type_id, user_id) FROM stdin;
@@ -714,7 +662,7 @@ COPY public.django_admin_log (id, action_time, object_id, object_repr, action_fl
 
 
 --
--- Data for Name: django_content_type; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: django_content_type; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.django_content_type (id, app_label, model) FROM stdin;
@@ -732,7 +680,7 @@ COPY public.django_content_type (id, app_label, model) FROM stdin;
 
 
 --
--- Data for Name: django_migrations; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: django_migrations; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.django_migrations (id, app, name, applied) FROM stdin;
@@ -765,7 +713,7 @@ COPY public.django_migrations (id, app, name, applied) FROM stdin;
 
 
 --
--- Data for Name: django_session; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: django_session; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.django_session (session_key, session_data, expire_date) FROM stdin;
@@ -775,7 +723,7 @@ ximvunzoqy6f7uexeg2qr1472y6lln69	.eJxVjDkOwjAQRe_iGlu2ZxLZlPScIZrFJixKpCwV4u4kUg
 
 
 --
--- Data for Name: store_collection; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: store_collection; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.store_collection (id, title, description) FROM stdin;
@@ -784,7 +732,7 @@ COPY public.store_collection (id, title, description) FROM stdin;
 
 
 --
--- Data for Name: store_product; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: store_product; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.store_product (id, name, description, size, price, collection_id, style, genre, material) FROM stdin;
@@ -796,7 +744,7 @@ COPY public.store_product (id, name, description, size, price, collection_id, st
 
 
 --
--- Data for Name: store_productimage; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: store_productimage; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.store_productimage (id, image, variant_id) FROM stdin;
@@ -820,7 +768,7 @@ COPY public.store_productimage (id, image, variant_id) FROM stdin;
 
 
 --
--- Data for Name: store_variant; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: store_variant; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.store_variant (id, color, quantity, product_id) FROM stdin;
@@ -832,7 +780,7 @@ COPY public.store_variant (id, color, quantity, product_id) FROM stdin;
 
 
 --
--- Data for Name: users_user; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: users_user; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.users_user (password, last_login, is_superuser, first_name, last_name, email, is_staff, is_active, date_joined, id, phone) FROM stdin;
@@ -841,7 +789,7 @@ pbkdf2_sha256$320000$KNnuVXB2TDHrZk8Qji7GYa$u6ab5BSt2YHH2Gdsq77dXntugRd/tVUw6Itf
 
 
 --
--- Data for Name: users_user_groups; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: users_user_groups; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.users_user_groups (id, user_id, group_id) FROM stdin;
@@ -849,7 +797,7 @@ COPY public.users_user_groups (id, user_id, group_id) FROM stdin;
 
 
 --
--- Data for Name: users_user_user_permissions; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: users_user_user_permissions; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.users_user_user_permissions (id, user_id, permission_id) FROM stdin;
@@ -857,91 +805,91 @@ COPY public.users_user_user_permissions (id, user_id, permission_id) FROM stdin;
 
 
 --
--- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.auth_group_id_seq', 1, false);
 
 
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.auth_group_permissions_id_seq', 1, false);
 
 
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.auth_permission_id_seq', 40, true);
 
 
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.django_admin_log_id_seq', 77, true);
 
 
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.django_content_type_id_seq', 10, true);
 
 
 --
--- Name: django_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: django_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.django_migrations_id_seq', 25, true);
 
 
 --
--- Name: store_collection_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: store_collection_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.store_collection_id_seq', 1, true);
 
 
 --
--- Name: store_product_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: store_product_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.store_product_id_seq', 4, true);
 
 
 --
--- Name: store_productimage_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: store_productimage_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.store_productimage_id_seq', 37, true);
 
 
 --
--- Name: store_variant_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: store_variant_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.store_variant_id_seq', 4, true);
 
 
 --
--- Name: users_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: users_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.users_user_groups_id_seq', 1, false);
 
 
 --
--- Name: users_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.users_user_user_permissions_id_seq', 1, false);
 
 
 --
--- Name: auth_group auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_group auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group
@@ -949,7 +897,7 @@ ALTER TABLE ONLY public.auth_group
 
 
 --
--- Name: auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -957,7 +905,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_group_permissions auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_group_permissions auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -965,7 +913,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_group auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_group auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group
@@ -973,7 +921,7 @@ ALTER TABLE ONLY public.auth_group
 
 
 --
--- Name: auth_permission auth_permission_content_type_id_codename_01ab375a_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_permission auth_permission_content_type_id_codename_01ab375a_uniq; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_permission
@@ -981,7 +929,7 @@ ALTER TABLE ONLY public.auth_permission
 
 
 --
--- Name: auth_permission auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_permission auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_permission
@@ -989,7 +937,7 @@ ALTER TABLE ONLY public.auth_permission
 
 
 --
--- Name: django_admin_log django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_admin_log django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_admin_log
@@ -997,7 +945,7 @@ ALTER TABLE ONLY public.django_admin_log
 
 
 --
--- Name: django_content_type django_content_type_app_label_model_76bd3d3b_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_content_type django_content_type_app_label_model_76bd3d3b_uniq; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_content_type
@@ -1005,7 +953,7 @@ ALTER TABLE ONLY public.django_content_type
 
 
 --
--- Name: django_content_type django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_content_type django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_content_type
@@ -1013,7 +961,7 @@ ALTER TABLE ONLY public.django_content_type
 
 
 --
--- Name: django_migrations django_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_migrations django_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_migrations
@@ -1021,7 +969,7 @@ ALTER TABLE ONLY public.django_migrations
 
 
 --
--- Name: django_session django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_session django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_session
@@ -1029,7 +977,7 @@ ALTER TABLE ONLY public.django_session
 
 
 --
--- Name: store_collection store_collection_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_collection store_collection_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_collection
@@ -1037,7 +985,7 @@ ALTER TABLE ONLY public.store_collection
 
 
 --
--- Name: store_product store_product_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_product store_product_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_product
@@ -1045,7 +993,7 @@ ALTER TABLE ONLY public.store_product
 
 
 --
--- Name: store_productimage store_productimage_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_productimage store_productimage_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_productimage
@@ -1053,7 +1001,7 @@ ALTER TABLE ONLY public.store_productimage
 
 
 --
--- Name: store_variant store_variant_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_variant store_variant_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_variant
@@ -1061,7 +1009,7 @@ ALTER TABLE ONLY public.store_variant
 
 
 --
--- Name: users_user users_user_email_243f6e77_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user users_user_email_243f6e77_uniq; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user
@@ -1069,7 +1017,7 @@ ALTER TABLE ONLY public.users_user
 
 
 --
--- Name: users_user_groups users_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_groups users_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_groups
@@ -1077,7 +1025,7 @@ ALTER TABLE ONLY public.users_user_groups
 
 
 --
--- Name: users_user_groups users_user_groups_user_id_group_id_b88eab82_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_groups users_user_groups_user_id_group_id_b88eab82_uniq; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_groups
@@ -1085,7 +1033,7 @@ ALTER TABLE ONLY public.users_user_groups
 
 
 --
--- Name: users_user users_user_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user users_user_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user
@@ -1093,7 +1041,7 @@ ALTER TABLE ONLY public.users_user
 
 
 --
--- Name: users_user_user_permissions users_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions users_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_user_permissions
@@ -1101,7 +1049,7 @@ ALTER TABLE ONLY public.users_user_user_permissions
 
 
 --
--- Name: users_user_user_permissions users_user_user_permissions_user_id_permission_id_43338c45_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions users_user_user_permissions_user_id_permission_id_43338c45_uniq; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_user_permissions
@@ -1109,119 +1057,119 @@ ALTER TABLE ONLY public.users_user_user_permissions
 
 
 --
--- Name: auth_group_name_a6ea08ec_like; Type: INDEX; Schema: public; Owner: postgres
+-- Name: auth_group_name_a6ea08ec_like; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX auth_group_name_a6ea08ec_like ON public.auth_group USING btree (name varchar_pattern_ops);
 
 
 --
--- Name: auth_group_permissions_group_id_b120cbf9; Type: INDEX; Schema: public; Owner: postgres
+-- Name: auth_group_permissions_group_id_b120cbf9; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX auth_group_permissions_group_id_b120cbf9 ON public.auth_group_permissions USING btree (group_id);
 
 
 --
--- Name: auth_group_permissions_permission_id_84c5c92e; Type: INDEX; Schema: public; Owner: postgres
+-- Name: auth_group_permissions_permission_id_84c5c92e; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX auth_group_permissions_permission_id_84c5c92e ON public.auth_group_permissions USING btree (permission_id);
 
 
 --
--- Name: auth_permission_content_type_id_2f476e4b; Type: INDEX; Schema: public; Owner: postgres
+-- Name: auth_permission_content_type_id_2f476e4b; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX auth_permission_content_type_id_2f476e4b ON public.auth_permission USING btree (content_type_id);
 
 
 --
--- Name: django_admin_log_content_type_id_c4bce8eb; Type: INDEX; Schema: public; Owner: postgres
+-- Name: django_admin_log_content_type_id_c4bce8eb; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX django_admin_log_content_type_id_c4bce8eb ON public.django_admin_log USING btree (content_type_id);
 
 
 --
--- Name: django_admin_log_user_id_c564eba6; Type: INDEX; Schema: public; Owner: postgres
+-- Name: django_admin_log_user_id_c564eba6; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX django_admin_log_user_id_c564eba6 ON public.django_admin_log USING btree (user_id);
 
 
 --
--- Name: django_session_expire_date_a5c62663; Type: INDEX; Schema: public; Owner: postgres
+-- Name: django_session_expire_date_a5c62663; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX django_session_expire_date_a5c62663 ON public.django_session USING btree (expire_date);
 
 
 --
--- Name: django_session_session_key_c0390e0f_like; Type: INDEX; Schema: public; Owner: postgres
+-- Name: django_session_session_key_c0390e0f_like; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX django_session_session_key_c0390e0f_like ON public.django_session USING btree (session_key varchar_pattern_ops);
 
 
 --
--- Name: store_product_collection_id_2914d2ba; Type: INDEX; Schema: public; Owner: postgres
+-- Name: store_product_collection_id_2914d2ba; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX store_product_collection_id_2914d2ba ON public.store_product USING btree (collection_id);
 
 
 --
--- Name: store_productimage_variant_id_f53c6fe1; Type: INDEX; Schema: public; Owner: postgres
+-- Name: store_productimage_variant_id_f53c6fe1; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX store_productimage_variant_id_f53c6fe1 ON public.store_productimage USING btree (variant_id);
 
 
 --
--- Name: store_variant_product_id_3c4bd418; Type: INDEX; Schema: public; Owner: postgres
+-- Name: store_variant_product_id_3c4bd418; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX store_variant_product_id_3c4bd418 ON public.store_variant USING btree (product_id);
 
 
 --
--- Name: users_user_email_243f6e77_like; Type: INDEX; Schema: public; Owner: postgres
+-- Name: users_user_email_243f6e77_like; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX users_user_email_243f6e77_like ON public.users_user USING btree (email varchar_pattern_ops);
 
 
 --
--- Name: users_user_groups_group_id_9afc8d0e; Type: INDEX; Schema: public; Owner: postgres
+-- Name: users_user_groups_group_id_9afc8d0e; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX users_user_groups_group_id_9afc8d0e ON public.users_user_groups USING btree (group_id);
 
 
 --
--- Name: users_user_groups_user_id_5f6f5a90; Type: INDEX; Schema: public; Owner: postgres
+-- Name: users_user_groups_user_id_5f6f5a90; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX users_user_groups_user_id_5f6f5a90 ON public.users_user_groups USING btree (user_id);
 
 
 --
--- Name: users_user_user_permissions_permission_id_0b93982e; Type: INDEX; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions_permission_id_0b93982e; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX users_user_user_permissions_permission_id_0b93982e ON public.users_user_user_permissions USING btree (permission_id);
 
 
 --
--- Name: users_user_user_permissions_user_id_20aca447; Type: INDEX; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions_user_id_20aca447; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX users_user_user_permissions_user_id_20aca447 ON public.users_user_user_permissions USING btree (user_id);
 
 
 --
--- Name: auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -1229,7 +1177,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -1237,7 +1185,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.auth_permission
@@ -1245,7 +1193,7 @@ ALTER TABLE ONLY public.auth_permission
 
 
 --
--- Name: django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_admin_log
@@ -1253,7 +1201,7 @@ ALTER TABLE ONLY public.django_admin_log
 
 
 --
--- Name: django_admin_log django_admin_log_user_id_c564eba6_fk_users_user_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: django_admin_log django_admin_log_user_id_c564eba6_fk_users_user_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.django_admin_log
@@ -1261,7 +1209,7 @@ ALTER TABLE ONLY public.django_admin_log
 
 
 --
--- Name: store_product store_product_collection_id_2914d2ba_fk_store_collection_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_product store_product_collection_id_2914d2ba_fk_store_collection_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_product
@@ -1269,7 +1217,7 @@ ALTER TABLE ONLY public.store_product
 
 
 --
--- Name: store_productimage store_productimage_variant_id_f53c6fe1_fk_store_variant_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_productimage store_productimage_variant_id_f53c6fe1_fk_store_variant_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_productimage
@@ -1277,7 +1225,7 @@ ALTER TABLE ONLY public.store_productimage
 
 
 --
--- Name: store_variant store_variant_product_id_3c4bd418_fk_store_product_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: store_variant store_variant_product_id_3c4bd418_fk_store_product_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.store_variant
@@ -1285,7 +1233,7 @@ ALTER TABLE ONLY public.store_variant
 
 
 --
--- Name: users_user_groups users_user_groups_group_id_9afc8d0e_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_groups users_user_groups_group_id_9afc8d0e_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_groups
@@ -1293,7 +1241,7 @@ ALTER TABLE ONLY public.users_user_groups
 
 
 --
--- Name: users_user_groups users_user_groups_user_id_5f6f5a90_fk_users_user_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_groups users_user_groups_user_id_5f6f5a90_fk_users_user_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_groups
@@ -1301,7 +1249,7 @@ ALTER TABLE ONLY public.users_user_groups
 
 
 --
--- Name: users_user_user_permissions users_user_user_perm_permission_id_0b93982e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions users_user_user_perm_permission_id_0b93982e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_user_permissions
@@ -1309,7 +1257,7 @@ ALTER TABLE ONLY public.users_user_user_permissions
 
 
 --
--- Name: users_user_user_permissions users_user_user_permissions_user_id_20aca447_fk_users_user_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_user_user_permissions users_user_user_permissions_user_id_20aca447_fk_users_user_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users_user_user_permissions
