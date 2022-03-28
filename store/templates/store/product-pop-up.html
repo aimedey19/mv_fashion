@@ -1,0 +1,102 @@
+<div class="modal fade quick-view-popup" id="prod-{{ product.id }}" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 9999 !important; overflow: auto !important;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="ProductSection-product-template" class="product-template__container prstyle1">
+                    <div class="product-single">
+                        <a href="javascript:void()" data-dismiss="modal" class="model-close-btn pull-right"
+                           title="close"><span class="icon icon anm anm-times-l"></span></a>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product-details-img">
+                                    <div class="pl-20">
+                                        <img src="{{ product.get_image }}"
+                                             alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product-single__meta">
+                                    <div class="prInfoRow">
+                                        <div class="product-stock"><span class="instock ">Disponible</span>
+                                        </div>
+                                    </div>
+                                    <p class="product-single__price product-single__price-product-template">
+
+                                                <span
+                                                        class="product-price__price product-price__price-product-template product-price__sale product-price__sale--single">
+                                                    <span id="ProductPrice-product-template"><span
+                                                            class="money">{{ product.get_beautiful_price }}</span></span>
+                                                </span>
+                                    </p>
+                                    <div class="product-single__description rte">
+                                        {{ product.description }}
+                                    </div>
+
+                                    <form method="post" action="http://annimexweb.com/cart/add"
+                                          id="product_form_10508262282" accept-charset="UTF-8"
+                                          class="product-form product-form-product-template hidedropdown"
+                                          enctype="multipart/form-data">
+
+                                        <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                            <div class="product-form__item">
+                                                <span class="font-weight-bold">Style: </span>
+                                                <span>{{ product.style }}</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="swatch clearfix swatch-0 option1" data-option-index="0">
+                                            <div class="product-form__item">
+                                                <span class="font-weight-bold">Couleur: </span>
+                                                {% for variant in product.variants.all %}
+                                                <span>Multicolor</span>
+                                                {% endfor %}
+                                                {% comment %}<div data-value="Red"
+                                                            class="swatch-element color red available">
+                                                            <input class="swatchInput" id="swatch-0-red" type="radio"
+                                                                name="option-0" value="Red">
+                                                            <label class="swatchLbl color medium rectangle"
+                                                                for="swatch-0-red"
+                                                                style="background-image:url(assets/images/product-detail-page/variant1-1.jpg);"
+                                                                title="Red"></label>
+                                                        </div>{% endcomment %}
+                                            </div>
+                                        </div>
+                                        <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                            <div class="product-form__item">
+                                                <span class="font-weight-bold">Matière: </span>
+                                                <span>{{ product.material }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                            <div class="product-form__item">
+                                                <span class="font-weight-bold">Genre: </span>
+                                                <span>{{ product.genre }}</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                            <div class="product-form__item">
+                                                <span class="font-weight-bold">Taille: </span>
+
+                                                {% for size in product.size %}
+                                                <span class="swatchLbl medium rectangle" for="swatch-1-m"
+                                                      title="M"> M </span>
+                                                {% endfor %}
+
+                                            </div>
+                                        </div>
+                                        <div class="product-action clearfix">
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

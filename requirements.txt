@@ -5,3 +5,6 @@ django-crispy-forms
 django-browser-reload
 gunicorn
 whitenoise
+dj-shop-cart==3.0.1
+psycopg2
+django-environ
