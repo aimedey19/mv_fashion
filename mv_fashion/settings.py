@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_browser_reload',
     'store.apps.StoreConfig',
     'users.apps.UsersConfig',
     'phonenumber_field',
